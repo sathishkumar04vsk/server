@@ -1,12 +1,12 @@
 import express, { response } from "express";
-import cros from "cors";
+import cors from "cors";
 import dotenv from "dotenv";
 import { MongoClient, ObjectId } from "mongodb";
 import { request } from "express";
 
 const app = express();
 dotenv.config();
-app.use(cros());
+app.use(cors());
 
 const PORT = process.env.PORT;
 
