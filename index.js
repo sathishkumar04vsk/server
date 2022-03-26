@@ -61,7 +61,7 @@ app.post("/add-expense", async (request, response) => {
   response.send(data);
 });
 
-app.get("/incomebymonth", async (request, response) => {
+app.post("/incomebymonth", async (request, response) => {
   const { month } = request.body;
   // console.log(data);
 
@@ -73,7 +73,7 @@ app.get("/incomebymonth", async (request, response) => {
   response.send(moneydata);
 });
 
-app.get("/expensebymonth", async (request, response) => {
+app.post("/expensebymonth", async (request, response) => {
   const { month } = request.body;
   // console.log(data);
 
