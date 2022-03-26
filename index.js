@@ -21,7 +21,7 @@ async function createConnection() {
   return client;
 }
 app.get("/", (request, response) => {
-  response.send("hello sathishkumar venkatesan");
+  response.send("hello sathishkumar venkatesan Datas => ,/income ,/expense ,/incomebymonth ,/expensebymonth ");
 });
 app.get("/income", async function (request, response) {
   const moneydata = await client
